@@ -47,6 +47,10 @@
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+.mas-vendidos img:hover{
+    box-shadow: grey 5px 5px 5px 5px;
+}
 /* ----footer---- */
 .pie{
     display: flex;
@@ -59,25 +63,30 @@
     padding-top: 10px;
 }
 /* ----Perfil---- */
+.formulario-padre{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F551945fe-7db9-46f1-9bdc-dbc031776849_785x502.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .formulario{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: red solid 1px;
     width: 600px;
     border-radius: 10px;
     background-color: rgb(71, 71, 175);
 }
-.formulario-padre{
-    border: solid blue 1px;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
+
 .formulario a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
+}
+.formulario a:hover{
+    color: orange;
 }
 .boton-registro{
     width: 120px;
@@ -86,4 +95,21 @@
 }
 .registro-titulo{
     text-align: center;
+}
+/* ----media queries---- */
+@media(max-width: 900px){
+    .mas-vendidos{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 350px 350px 350px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 900px){
+    .pie{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
 }
