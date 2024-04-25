@@ -16,7 +16,7 @@
 .navbar-brand {
     font-size: 30px;
 }
-body{
+.letra{
     font-size: 20px;
 }
 /* ---- grid ---- */
@@ -57,4 +57,33 @@ body{
     color: white;
     font-size: 1.5rem;
     padding-top: 10px;
+}
+/* ----Perfil---- */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: red solid 1px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(71, 71, 175);
+}
+.formulario-padre{
+    border: solid blue 1px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.formulario a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.boton-registro{
+    width: 120px;
+    height: 2rem;
+    margin: 10px 0 10px 0;
+}
+.registro-titulo{
+    text-align: center;
 }
